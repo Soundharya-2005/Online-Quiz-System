@@ -1,0 +1,1069 @@
+{
+  "quantitative": {
+    "title": "Quantitative Aptitude",
+    "subtopics": [
+      {
+        "id": "percentages",
+        "name": "Percentages",
+        "videoId": "jvRq87ZWzIk",
+        "quiz": [
+          {
+            "q": "What is 20% of 250?",
+            "options": ["40", "50", "60", "70"],
+            "answer": 1
+          },
+          {
+            "q": "If a number is increased by 20% to get 180, what is the original number?",
+            "options": ["150", "160", "170", "140"],
+            "answer": 0
+          },
+          {
+            "q": "What is 15% of 200?",
+            "options": ["20", "30", "40", "50"],
+            "answer": 1
+          },
+          {
+            "q": "40 is what percent of 200?",
+            "options": ["10%", "15%", "20%", "25%"],
+            "answer": 2
+          },
+          {
+            "q": "If number decreased by 10% → 90, original?",
+            "options": ["81", "99", "100", "110"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "profit-loss",
+        "name": "Profit & Loss",
+        "videoId": "T2odvmxqi1I",
+        "quiz": [
+          {
+            "q": "Bought ₹500, sold ₹600. Profit %?",
+            "options": ["10%", "20%", "15%", "25%"],
+            "answer": 1
+          },
+          {
+            "q": "Sold at ₹800 loss 20% → cost price?",
+            "options": ["₹960", "₹1000", "₹900", "₹1100"],
+            "answer": 1
+          },
+          {
+            "q": "Sold ₹120 profit 20% → CP?",
+            "options": ["₹90", "₹100", "₹110", "₹115"],
+            "answer": 1
+          },
+          {
+            "q": "Buy ₹1 sell ₹1.25 → profit %?",
+            "options": ["20%", "25%", "30%", "33%"],
+            "answer": 1
+          },
+          {
+            "q": "Sell ₹500 → loss 10%. To gain 10% price?",
+            "options": ["₹550", "₹600", "₹611.11", "₹650"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "simple-interest",
+        "name": "Simple Interest",
+        "videoId": "jvRq87ZWzIk",
+        "quiz": [
+          {
+            "q": "SI on ₹1000 @5% for 2 yrs?",
+            "options": ["₹50", "₹100", "₹150", "₹200"],
+            "answer": 1
+          },
+          {
+            "q": "₹5000 @8% for 3 yrs (SI) amount?",
+            "options": ["₹6000", "₹6200", "₹6500", "₹7000"],
+            "answer": 1
+          },
+          {
+            "q": "₹800 @10% for 3 yrs total amount?",
+            "options": ["₹1040", "₹1100", "₹1000", "₹960"],
+            "answer": 0
+          },
+          {
+            "q": "Rate to double in 5 yrs (SI)?",
+            "options": ["10%", "15%", "20%", "25%"],
+            "answer": 2
+          },
+          {
+            "q": "SI ₹100, rate 10%, time 2 yrs → principal?",
+            "options": ["₹400", "₹500", "₹600", "₹700"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "compound-interest",
+        "name": "Compound Interest",
+        "videoId": "PbUZnzncmR4",
+        "quiz": [
+          {
+            "q": "CI on ₹1000 @10% for 2 yrs?",
+            "options": ["₹200", "₹210", "₹220", "₹250"],
+            "answer": 1
+          },
+          {
+            "q": "Diff SI-CI for 2 yrs @5% is ₹50. Sum?",
+            "options": ["₹20000", "₹25000", "₹10000", "₹15000"],
+            "answer": 0
+          },
+          {
+            "q": "CI on ₹20000 @10% for 1 yr half-yearly?",
+            "options": ["₹2050", "₹2100", "₹2150", "₹2200"],
+            "answer": 1
+          },
+          {
+            "q": "Sum doubles in 2 years CI → four times in?",
+            "options": ["3 yrs", "4 yrs", "5 yrs", "6 yrs"],
+            "answer": 1
+          },
+          {
+            "q": "CI 2 yrs = ₹60, SI 2 yrs = ₹50, sum?",
+            "options": ["₹250", "₹500", "₹600", "₹800"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "time-speed",
+        "name": "Time, Speed & Distance",
+        "videoId": "jzNxXm5twx4",
+        "quiz": [
+          {
+            "q": "Train 60 km/h for 3h → distance?",
+            "options": ["120 km", "180 km", "200 km", "240 km"],
+            "answer": 1
+          },
+          {
+            "q": "Man walks 4 km/h to cover 20 km → time?",
+            "options": ["4 hours", "5 hours", "6 hours", "7 hours"],
+            "answer": 1
+          },
+          {
+            "q": "150 km in 3 hours → speed?",
+            "options": ["40 km/h", "50 km/h", "60 km/h", "70 km/h"],
+            "answer": 1
+          },
+          {
+            "q": "100 km in 2h → speed in m/s?",
+            "options": ["13.89 m/s", "10 m/s", "20 m/s", "27.78 m/s"],
+            "answer": 0
+          },
+          {
+            "q": "40 km at 10 km/h → time?",
+            "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "time-work",
+        "name": "Time & Work",
+        "videoId": "KE7tQf9spPg",
+        "quiz": [
+          {
+            "q": "A 10d, B 15d → together?",
+            "options": ["5 days", "6 days", "8 days", "12 days"],
+            "answer": 1
+          },
+          {
+            "q": "10 men 20d → 20 men ?",
+            "options": ["5 days", "10 days", "15 days", "20 days"],
+            "answer": 1
+          },
+          {
+            "q": "A&B 12d, B 30d → A alone?",
+            "options": ["15 days", "20 days", "25 days", "30 days"],
+            "answer": 1
+          },
+          {
+            "q": "5 pipes fill 10h → 10 pipes ?",
+            "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+            "answer": 3
+          },
+          {
+            "q": "A&B 18d, B&C 24d, C&A 36d → A+B+C ?",
+            "options": ["12 days", "16 days", "20 days", "24 days"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "averages",
+        "name": "Averages",
+        "videoId": "rhSxQ4ieAYc",
+        "quiz": [
+          {
+            "q": "Average of 10,20,30,40,50?",
+            "options": ["20", "25", "30", "35"],
+            "answer": 2
+          },
+          {
+            "q": "5 students avg 15, new avg 16 → new student's age?",
+            "options": ["18", "20", "21", "25"],
+            "answer": 1
+          },
+          {
+            "q": "Avg of three numbers 20, two are 15 & 25 → third?",
+            "options": ["10", "15", "20", "25"],
+            "answer": 2
+          },
+          {
+            "q": "Average of first 50 natural numbers?",
+            "options": ["25", "25.5", "26", "26.5"],
+            "answer": 1
+          },
+          {
+            "q": "Marks 70,80,90,60 → average?",
+            "options": ["70", "75", "80", "85"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "ratios",
+        "name": "Ratios & Proportion",
+        "videoId": "jfoJBivWlnQ",
+        "quiz": [
+          {
+            "q": "Ratio boys:girls 2:3, boys 10 → girls?",
+            "options": ["15", "12", "18", "20"],
+            "answer": 0
+          },
+          {
+            "q": "a:b=2:3 and b:c=4:5 → a:c ?",
+            "options": ["8:15", "6:15", "2:5", "4:15"],
+            "answer": 0
+          },
+          {
+            "q": "10 books ₹200 → 15 books?",
+            "options": ["₹250", "₹300", "₹350", "₹400"],
+            "answer": 1
+          },
+          {
+            "q": "A:B = 4:5 sum 36 → B's age?",
+            "options": ["16", "20", "24", "28"],
+            "answer": 1
+          },
+          {
+            "q": "Ratio 3:4 sum 84 → smaller?",
+            "options": ["36", "48", "42", "54"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "probability",
+        "name": "Probability",
+        "videoId": "ximxxERGSUc",
+        "quiz": [
+          {
+            "q": "Prob of head tossing coin?",
+            "options": ["1/4", "1/2", "1/3", "1"],
+            "answer": 1
+          },
+          {
+            "q": "5 red & 5 blue → pick red?",
+            "options": ["1/2", "1/5", "1/10", "1/4"],
+            "answer": 0
+          },
+          {
+            "q": "Prob of rolling '6' ?",
+            "options": ["1/6", "1/2", "1/3", "1"],
+            "answer": 0
+          },
+          {
+            "q": "Prob prime on die?",
+            "options": ["1/6", "1/3", "1/2", "2/3"],
+            "answer": 2
+          },
+          {
+            "q": "Bag:3 red,4 black → draw red?",
+            "options": ["3/7", "4/7", "1/2", "1/3"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "permutation",
+        "name": "Permutation & Combination",
+        "videoId": "ETiRE7N7pEI",
+        "quiz": [
+          {
+            "q": "Ways to arrange 'CAT'?",
+            "options": ["3", "6", "9", "12"],
+            "answer": 1
+          },
+          {
+            "q": "Choose 3 from 5 → ways?",
+            "options": ["5", "10", "15", "20"],
+            "answer": 1
+          },
+          {
+            "q": "Permutations of 2 letters from 'KEY'?",
+            "options": ["3", "6", "9", "12"],
+            "answer": 1
+          },
+          {
+            "q": "Committee 2 from 4 → ways?",
+            "options": ["4", "6", "8", "12"],
+            "answer": 1
+          },
+          {
+            "q": "3-digit numbers from 1-5 no repeat?",
+            "options": ["60", "120", "240", "15"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "data-interpretation",
+        "name": "Data Interpretation",
+        "videoId": "mzk-qfQmbJM",
+        "quiz": [
+          {
+            "q": "Pie chart 50% angle?",
+            "options": ["90°", "180°", "270°", "360°"],
+            "answer": 1
+          },
+          {
+            "q": "Bar Jan twice Feb → conclusion?",
+            "options": ["Jan half", "Same", "Twice", "No value"],
+            "answer": 2
+          },
+          {
+            "q": "To total populations from table?",
+            "options": ["Subtract", "Multiply", "Add", "Divide"],
+            "answer": 2
+          },
+          {
+            "q": "X-axis typically?",
+            "options": ["Vertical", "Horizontal", "Title", "Legend"],
+            "answer": 1
+          },
+          {
+            "q": "Trend in line graph?",
+            "options": ["Single point", "Overall direction", "Highest point", "Lowest point"],
+            "answer": 1
+          }
+        ]
+      }
+    ]
+  },
+  "logical": {
+    "title": "Logical Reasoning",
+    "subtopics": [
+      {
+        "id": "series",
+        "name": "Series",
+        "videoId": "gXBuL_FyahE",
+        "quiz": [
+          {
+            "q": "Next: 2,4,6,8,?",
+            "options": ["10", "11", "12", "13"],
+            "answer": 0
+          },
+          {
+            "q": "Next letter: A,C,E,G,?",
+            "options": ["H", "I", "J", "K"],
+            "answer": 1
+          },
+          {
+            "q": "Symbols ▲,▼,►,◄,? → next?",
+            "options": ["▲", "▼", "►", "◄"],
+            "answer": 0
+          },
+          {
+            "q": "1,4,9,16,? → next?",
+            "options": ["20", "25", "36", "49"],
+            "answer": 1
+          },
+          {
+            "q": "Odd one out: 10,20,30,35,40",
+            "options": ["10", "20", "30", "35"],
+            "answer": 3
+          }
+        ]
+      },
+      {
+        "id": "blood-relations",
+        "name": "Blood Relations",
+        "videoId": "LRdLhfDupMU",
+        "quiz": [
+          {
+            "q": "'He is my mother's husband's son' relation?",
+            "options": ["Brother", "Uncle", "Cousin", "Father"],
+            "answer": 0
+          },
+          {
+            "q": "A is B's sister, B is C's father → A to C?",
+            "options": ["Mother", "Aunt", "Sister", "Grandma"],
+            "answer": 1
+          },
+          {
+            "q": "P is Q's mother. Q is R's father → P to R?",
+            "options": ["Mother", "Grandmother", "Aunt", "Sister"],
+            "answer": 1
+          },
+          {
+            "q": "X is Y's son & Z is Y's wife → Z to X?",
+            "options": ["Mother", "Sister", "Aunt", "Cousin"],
+            "answer": 0
+          },
+          {
+            "q": "M's wife's brother is N. N to M?",
+            "options": ["Brother", "Brother-in-law", "Cousin", "Uncle"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "seating",
+        "name": "Seating Arrangement",
+        "videoId": "GYe98jwCn7g",
+        "quiz": [
+          {
+            "q": "Four A,B,C,D row. A next to B, C not next to D. D at end → who next to C?",
+            "options": ["A", "B", "D", "Cannot be determined"],
+            "answer": 1
+          },
+          {
+            "q": "Circle E right of B; A between E & D → left of C?",
+            "options": ["A", "B", "D", "E"],
+            "answer": 1
+          },
+          {
+            "q": "Tallest among A,B,C,D,E given relations?",
+            "options": ["A", "C", "D", "E"],
+            "answer": 1
+          },
+          {
+            "q": "A likes Red. C not Green. B likes?",
+            "options": ["Red", "Blue", "Green", "Cannot"],
+            "answer": 1
+          },
+          {
+            "q": "Books A on top of B... bottom book?",
+            "options": ["A", "B", "C", "E"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "coding",
+        "name": "Coding-Decoding",
+        "videoId": "wwN3mJ-b4FY",
+        "quiz": [
+          {
+            "q": "If 'CAT' -> 'DDU' how 'DOG'?",
+            "options": ["EPI", "EPH", "EPO", "EPM"],
+            "answer": 1
+          },
+          {
+            "q": "If 'BIRD' -> 'EJUG' how 'FISH'?",
+            "options": ["ILVI", "ILVK", "ILVJ", "ILVH"],
+            "answer": 2
+          },
+          {
+            "q": "'APPLE'->'BQQMF' → 'MANGO'?",
+            "options": ["NBNGP", "NBOGP", "NBOHP", "NBNGO"],
+            "answer": 0
+          },
+          {
+            "q": "If A=1... 'CAT' = ?",
+            "options": ["24", "25", "26", "27"],
+            "answer": 0
+          },
+          {
+            "q": "DEER -> 244118 → LION?",
+            "options": ["1291514", "1291415", "1291516", "1291416"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "syllogism",
+        "name": "Syllogisms",
+        "videoId": "knFLfSr35wU",
+        "quiz": [
+          {
+            "q": "All cars are trains... conclusion all cars are buses?",
+            "options": ["Yes", "No", "Maybe", "Can't tell"],
+            "answer": 1
+          },
+          {
+            "q": "All A are B. All B are C → All A are C?",
+            "options": ["Yes", "No", "Maybe", "Can't tell"],
+            "answer": 0
+          },
+          {
+            "q": "Some shirts are pants... conclusion some shirts are jackets?",
+            "options": ["Yes", "No", "Maybe", "Can't tell"],
+            "answer": 0
+          },
+          {
+            "q": "Some dogs are cats. No cat is cow → some dogs are cows?",
+            "options": ["Yes", "No", "Maybe", "Can't tell"],
+            "answer": 1
+          },
+          {
+            "q": "All flowers are trees... conclusion all flowers beautiful?",
+            "options": ["Yes", "No", "Maybe", "Can't tell"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "direction",
+        "name": "Direction Sense",
+        "videoId": "x0WkptLF6oE",
+        "quiz": [
+          {
+            "q": "Walk 5km East then 3km North → distance from start?",
+            "options": ["8 km", "4 km", "5.83 km", "6.2 km"],
+            "answer": 2
+          },
+          {
+            "q": "Facing North, turns right → now facing?",
+            "options": ["East", "West", "North", "South"],
+            "answer": 0
+          },
+          {
+            "q": "If North called West... South called?",
+            "options": ["East", "West", "North", "South"],
+            "answer": 0
+          },
+          {
+            "q": "10m North, right 5m, left 10m → direction from start?",
+            "options": ["North-East", "North-West", "South-East", "South-West"],
+            "answer": 0
+          },
+          {
+            "q": "1km East, right 1km, right 1km → facing?",
+            "options": ["North", "South", "East", "West"],
+            "answer": 3
+          }
+        ]
+      }
+    ]
+  },
+  "verbal": {
+    "title": "Verbal Ability",
+    "videoId": "I4UIQe9PLNA",
+    "subtopics": [
+      {
+        "id": "reading",
+        "name": "Reading Comprehension",
+        "quiz": [
+          {
+            "q": "What is the main idea of a text?",
+            "options": ["A supporting detail", "A funny part", "Most important point", "The title"],
+            "answer": 2
+          },
+          {
+            "q": "What is synonym?",
+            "options": ["Same meaning", "Opposite", "Sounds same", "Hard to spell"],
+            "answer": 0
+          },
+          {
+            "q": "What is an inference?",
+            "options": ["Direct quote", "Conclusion based on evidence", "First sentence", "List of facts"],
+            "answer": 1
+          },
+          {
+            "q": "Figurative language is?",
+            "options": ["Math language", "Non-literal", "Foreign", "Legal"],
+            "answer": 1
+          },
+          {
+            "q": "Topic sentence does?",
+            "options": ["Conclude", "Introduce main idea", "Ask question", "Provide quote"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "sentence-correction",
+        "name": "Sentence Correction",
+        "quiz": [
+          {
+            "q": "Choose correct: 'He don't know'",
+            "options": ["He doesn't know", "He don't knows", "He didn't know", "He not know"],
+            "answer": 0
+          },
+          {
+            "q": "Choose correct article: '___ hour'",
+            "options": ["A", "An", "The", "No article"],
+            "answer": 1
+          },
+          {
+            "q": "Each of the boys ___ present",
+            "options": ["are", "is", "were", "be"],
+            "answer": 1
+          },
+          {
+            "q": "interested ___ music",
+            "options": ["on", "at", "in", "with"],
+            "answer": 2
+          },
+          {
+            "q": "She is senior ___ me",
+            "options": ["than", "to", "from", "over"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "para-jumbles",
+        "name": "Para Jumbles",
+        "quiz": [
+          {
+            "q": "Arrange: 1. I woke up. 2. I had breakfast. 3. I brushed my teeth. 4. I went to school.",
+            "options": ["1,2,3,4", "1,3,2,4", "2,1,3,4", "1,4,3,2"],
+            "answer": 1
+          },
+          {
+            "q": "He ran marathon → finished → tired → sleep",
+            "options": ["B,D,A,C", "B,A,C,D", "D,B,A,C", "A,B,D,C"],
+            "answer": 0
+          },
+          {
+            "q": "Friends came → had lunch → played → left",
+            "options": ["B,A,C,D", "B,C,A,D", "A,B,C,D", "B,D,A,C"],
+            "answer": 1
+          },
+          {
+            "q": "Car broke → called mechanic → fixed → on the way",
+            "options": ["C,A,B,D", "A,C,B,D", "C,B,A,D", "B,A,C,D"],
+            "answer": 0
+          },
+          {
+            "q": "Studied → results came → passed → happy",
+            "options": ["A,D,B,C", "A,B,D,C", "A,C,D,B", "D,A,B,C"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "vocabulary",
+        "name": "Vocabulary",
+        "quiz": [
+          {
+            "q": "Synonym of 'happy'?",
+            "options": ["sad", "joyful", "angry", "tired"],
+            "answer": 1
+          },
+          {
+            "q": "Antonym of 'brave'?",
+            "options": ["courageous", "fearless", "cowardly", "strong"],
+            "answer": 2
+          },
+          {
+            "q": "Synonym of 'beautiful'?",
+            "options": ["ugly", "pretty", "old", "new"],
+            "answer": 1
+          },
+          {
+            "q": "Antonym of 'fast'?",
+            "options": ["quick", "rapid", "slow", "speedy"],
+            "answer": 2
+          },
+          {
+            "q": "Synonym of 'generous'?",
+            "options": ["stingy", "selfish", "kind", "rude"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "error-spotting",
+        "name": "Error Spotting",
+        "quiz": [
+          {
+            "q": "Find error: 'She / have / a beautiful house.'",
+            "options": ["She", "have", "a beautiful house"],
+            "answer": 1
+          },
+          {
+            "q": "'He is taller / than me / in the class.'",
+            "options": ["He is taller", "than me", "in the class"],
+            "answer": 2
+          },
+          {
+            "q": "'Despite of / the rain, / we went out.'",
+            "options": ["Despite of", "the rain", "we went out"],
+            "answer": 0
+          },
+          {
+            "q": "'Neither she / nor I / are attending the meeting.'",
+            "options": ["Neither she", "nor I", "are attending"],
+            "answer": 2
+          },
+          {
+            "q": "'The teacher / gave us / too many homeworks.'",
+            "options": ["The teacher", "gave us", "too many homeworks"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "sentence-completion",
+        "name": "Sentence Completion",
+        "quiz": [
+          {
+            "q": "I would have bought a new car if...",
+            "options": ["I had more money.", "I have more money.", "I will have more money.", "I am having more money."],
+            "answer": 0
+          },
+          {
+            "q": "He said that he ___ his keys.",
+            "options": ["has lost", "had lost", "loses", "will lose"],
+            "answer": 1
+          },
+          {
+            "q": "She went to the library so that she...",
+            "options": ["can study.", "will study.", "could study.", "would study."],
+            "answer": 2
+          },
+          {
+            "q": "The train was late, so we missed...",
+            "options": ["our meeting.", "our lunch.", "our sleep.", "our bus."],
+            "answer": 0
+          },
+          {
+            "q": "He worked hard ___ his project to be successful.",
+            "options": ["so that", "in order to", "in spite of", "because of"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "fill-blanks",
+        "name": "Fill in the Blanks",
+        "quiz": [
+          {
+            "q": "I am going ___ the mall.",
+            "options": ["on", "at", "to", "in"],
+            "answer": 2
+          },
+          {
+            "q": "She ___ a delicious cake for her birthday.",
+            "options": ["bake", "baking", "bakes", "baked"],
+            "answer": 3
+          },
+          {
+            "q": "The sun ___ in the east.",
+            "options": ["rises", "rose", "rise", "rising"],
+            "answer": 0
+          },
+          {
+            "q": "He has been working on this project ___ morning.",
+            "options": ["since", "for", "from", "at"],
+            "answer": 0
+          },
+          {
+            "q": "She is not only beautiful ___ also smart.",
+            "options": ["and", "but", "also", "or"],
+            "answer": 1
+          }
+        ]
+      }
+    ]
+  },
+  "communication": {
+    "title": "Communication Skills",
+    "videoId": "RfFbA5uHqqw",
+    "subtopics": [
+      {
+        "id": "self-intro",
+        "name": "Self-introduction practice",
+        "quiz": [
+          {
+            "q": "Best way to start 'Tell me about yourself'?",
+            "options": ["My name is...", "I'm hardworking...", "Start with a brief professional summary", "I'm looking for a job..."],
+            "answer": 2
+          },
+          {
+            "q": "Length of the answer?",
+            "options": ["Life story", "<30s", "1-2 minutes", ">5 minutes"],
+            "answer": 2
+          },
+          {
+            "q": "Purpose of the question?",
+            "options": ["Test speaking", "Link background to company", "Get full life history", "Fill time"],
+            "answer": 1
+          },
+          {
+            "q": "Good way to end?",
+            "options": ["That's all", "I hope you liked it", "And that's why I'm excited", "I don't have anything else"],
+            "answer": 2
+          },
+          {
+            "q": "Key to strong answer?",
+            "options": ["Sound memorized", "Tailor to role", "Use technical jargon", "Make personal"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "explain-topic",
+        "name": "Explaining Topic Clearly",
+        "quiz": [
+          {
+            "q": "First step to explain complex topic?",
+            "options": ["Use jargon", "Start high-level", "Jump to details", "Ask them to explain"],
+            "answer": 1
+          },
+          {
+            "q": "Ensure listener understands?",
+            "options": ["Speak fast", "Use fillers", "Ask 'Does that make sense?'", "Never pause"],
+            "answer": 2
+          },
+          {
+            "q": "Organize explanation how?",
+            "options": ["Random", "Details first", "Intro-Body-Conclusion", "Multiple topics"],
+            "answer": 2
+          },
+          {
+            "q": "If listener confused?",
+            "options": ["Ignore", "Repeat louder", "Ask questions", "Get frustrated"],
+            "answer": 2
+          },
+          {
+            "q": "Role of example?",
+            "options": ["Confuse", "Make long", "Simplify", "Show off"],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "group-discussion",
+        "name": "Group Discussion",
+        "quiz": [
+          {
+            "q": "When others speak?",
+            "options": ["Interrupt", "Listen & take notes", "Start side chat", "Daydream"],
+            "answer": 1
+          },
+          {
+            "q": "Introduce new point politely?",
+            "options": ["I disagree", "Excuse me that's wrong", "I would like to add...", "Change topic"],
+            "answer": 2
+          },
+          {
+            "q": "Key quality?",
+            "options": ["Speak loudest", "Dominate", "Listen & contribute", "Stay silent"],
+            "answer": 2
+          },
+          {
+            "q": "Handle disagreement?",
+            "options": ["Get angry", "Attack person", "Respectfully argue", "Leave"],
+            "answer": 2
+          },
+          {
+            "q": "Facilitator role?",
+            "options": ["Talks most", "Guides discussion", "Takes notes", "Decides final"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "hr-questions",
+        "name": "HR Questions",
+        "quiz": [
+          {
+            "q": "STAR method stands for?",
+            "options": ["Tell story", "Situation Task Action Result", "Ask questions", "Evaluate resume"],
+            "answer": 1
+          },
+          {
+            "q": "How to answer 'time you failed'?",
+            "options": ["Blame others", "Deny failure", "Acknowledge & learn", "Make up story"],
+            "answer": 2
+          },
+          {
+            "q": "What HR looks for?",
+            "options": ["Social media", "Attitude & fit", "Family background", "Hobbies"],
+            "answer": 1
+          },
+          {
+            "q": "Answer 'Why hire you'?",
+            "options": ["I'm a hard worker", "Match skills to job", "List everything", "I need job"],
+            "answer": 1
+          },
+          {
+            "q": "Salary expectations?",
+            "options": ["Very high", "I'll take any", "Provide range & negotiate", "Refuse"],
+            "answer": 2
+          }
+        ]
+      }
+    ]
+  },
+  "gk": {
+    "title": "General Knowledge",
+    "subtopics": [
+      {
+        "id": "indian-history",
+        "name": "Indian History",
+        "quiz": [
+          {
+            "q": "Who founded Maurya dynasty?",
+            "options": ["Ashoka", "Bindusara", "Chandragupta Maurya", "Bimbisara"],
+            "answer": 2
+          },
+          {
+            "q": "Year of Battle of Plassey?",
+            "options": ["1757", "1764", "1857", "1707"],
+            "answer": 0
+          },
+          {
+            "q": "Capital of Chola Empire?",
+            "options": ["Madurai", "Thanjavur", "Kanchipuram", "Pataliputra"],
+            "answer": 1
+          },
+          {
+            "q": "Father of Indian Constitution?",
+            "options": ["N. Tagore", "B. R. Ambedkar", "Gandhi", "Nehru"],
+            "answer": 1
+          },
+          {
+            "q": "Harappa present-day?",
+            "options": ["India", "Pakistan", "Bangladesh", "Nepal"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "science",
+        "name": "Science Basics",
+        "quiz": [
+          {
+            "q": "H2O is",
+            "options": ["Oxygen", "Hydrogen", "Water", "Carbon"],
+            "answer": 2
+          },
+          {
+            "q": "Planet known as Red Planet",
+            "options": ["Earth", "Venus", "Mars", "Jupiter"],
+            "answer": 2
+          },
+          {
+            "q": "Speed of light approx",
+            "options": ["3×10^8 m/s", "3×10^6 m/s", "3×10^5 km/s", "Both 1 and 3"],
+            "answer": 3
+          },
+          {
+            "q": "Force unit",
+            "options": ["Joule", "Newton", "Pascal", "Watt"],
+            "answer": 1
+          },
+          {
+            "q": "Sun is a",
+            "options": ["Planet", "Star", "Comet", "Asteroid"],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "current-affairs",
+        "name": "Current Affairs",
+        "quiz": [
+          {
+            "q": "UN headquarters in",
+            "options": ["Geneva", "New York", "Paris", "London"],
+            "answer": 1
+          },
+          {
+            "q": "WHO stands for",
+            "options": ["World Health Org.", "Wildlife Habitat Org.", "Water Heat Office", "—"],
+            "answer": 0
+          },
+          {
+            "q": "Currency of Japan",
+            "options": ["Won", "Baht", "Yen", "Ringgit"],
+            "answer": 2
+          },
+          {
+            "q": "Largest ocean",
+            "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+            "answer": 2
+          },
+          {
+            "q": "Nobel Prizes given in",
+            "options": ["Sweden/Norway", "UK", "USA", "France"],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "awards",
+        "name": "Awards & Honors",
+        "quiz": [
+          {
+            "q": "Oscar Best Picture 2024?",
+            "options": ["Oppenheimer", "Barbie", "Poor Things", "Killers of the Flower Moon"],
+            "answer": 0
+          },
+          {
+            "q": "Nobel not in Stockholm?",
+            "options": ["Physics", "Chemistry", "Peace", "Literature"],
+            "answer": 2
+          },
+          {
+            "q": "Highest civilian award India?",
+            "options": ["Padma Vibhushan", "Bharat Ratna", "Padma Bhushan", "Padma Shri"],
+            "answer": 1
+          },
+          {
+            "q": "Most World Cups?",
+            "options": ["Germany", "Brazil", "Argentina", "Italy"],
+            "answer": 1
+          },
+          {
+            "q": "Nobel Physics 2023?",
+            "options": ["Pierre Agostini", "Ferenc Krausz", "Anne L’Huillier", "All"],
+            "answer": 3
+          }
+        ]
+      },
+      {
+        "id": "business",
+        "name": "Business Awareness",
+        "quiz": [
+          {
+            "q": "IPO stands for?",
+            "options": ["Initial Public Offering", "Internal Price Order", "Initial Purchase Option", "Investment & Purchase Order"],
+            "answer": 0
+          },
+          {
+            "q": "R&D stands for?",
+            "options": ["Research & Development", "Revenue & Distribution", "Retail & Distribution", "Resources & Design"],
+            "answer": 0
+          },
+          {
+            "q": "B2C = ?",
+            "options": ["Business to Customer", "Business to Company", "Business to Commerce", "Building to Customer"],
+            "answer": 0
+          },
+          {
+            "q": "ROI = ?",
+            "options": ["Return on Investment", "Rate of Interest", "Revenue of Income", "Return on Income"],
+            "answer": 0
+          },
+          {
+            "q": "Patent is?",
+            "options": ["Doc protects from lawsuits", "License giving exclusive rights", "Type of trademark", "Type of copyright"],
+            "answer": 1
+          }
+        ]
+      }
+    ]
+  }
+}

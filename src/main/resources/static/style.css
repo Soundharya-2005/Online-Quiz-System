@@ -1,0 +1,390 @@
+:root {
+  --bg: #f0f2f5;
+  --card: #ffffff;
+  --accent: #ff6347; /* Tomato */
+  --muted: #5e6b7c;
+  --glass: rgba(0, 0, 0, 0.04);
+  --primary: #8a2be2; /* BlueViolet */
+  --accent2: #00bcd4; /* Cyan */
+  --success: #4caf50; /* Green */
+  --danger: #f44336; /* Red */
+  --radius: 14px;
+  --glass-2: rgba(0, 0, 0, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 60px;
+}
+
+/* layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.view {
+  display: none;
+  padding: 28px 18px 80px;
+}
+
+.view.active {
+  display: block;
+}
+
+/* Updated header section */
+.topbar {
+  background: linear-gradient(to bottom, hwb(308 17% 11%), rgb(0, 188, 212)); /* Box background color */
+  border-radius: 9px; /* Box-style border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Box shadow */
+  padding: 10px; /* Increased padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px; /* Increased margin to separate from content */
+}
+
+.brand {
+  font-size: 32px; /* Larger font size */
+  margin: 0;
+  color: var(--primary);
+  text-align: center;
+  font-weight: 700;
+}
+
+.brand-mini {
+  font-weight: 700;
+  color:blue;
+  font-size: 20px; /* Larger font size */
+}
+
+/* container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.narrow {
+  max-width: 720px;
+}
+
+/* login */
+.center-card {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 50px;
+  background: var(--card);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.form input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+  color: inherit;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* topics grid */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.topics-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 18px;
+}
+
+.topic-card {
+  background: #f8f9fa;
+  border-radius: 18px;
+  padding: 24px;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 150px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.topic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.topic-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.topic-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.topic-card .icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--accent2));
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-size: 22px;
+}
+
+/* list */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.item .meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--primary), var(--accent2));
+  color: white;
+  box-shadow: 0 8px 24px rgba(138, 43, 226, 0.2);
+}
+
+.btn.ghost {
+  color: blue;
+  border: none;            /* border remove */
+  border-radius: 10px;     /* smooth edges */
+  padding: 8px 14px;       /* spacing */
+  font-weight: 600;
+}
+
+.btn:not(.ghost):hover {
+  transform: translateY(-2px);
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* video */
+.video-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 12px;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 460px;
+  border-radius: 12px;
+  border: 0;
+  background: black;
+}
+
+.video-wrap.small iframe {
+  height: 320px;
+}
+
+/* question card */
+.question-card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.options-grid {
+  display: flex; /* Change this from grid to flex */
+  flex-direction: column; /* This will make items stack vertically */
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.option {
+  width: 100%; /* Make each option take the full width */
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.option:hover {
+  background: rgba(138, 43, 226, 0.05);
+}
+
+.option.selected {
+  outline: 3px solid rgba(138, 43, 226, 0.2);
+  background: linear-gradient(to bottom, lab(64.29% -27.22 -23.62), lab(53.39% 86.39 -39.89)); 
+}
+.qmeta {
+  color: var(--muted);
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  gap: 8px;
+}
+/* result */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result-card {
+  padding: 80px; /* Padding increased for a larger box */
+  border-radius: 35px; /* Border radius increased for more rounded corners */
+  text-align: center;
+  background: var(--card);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Shadow made more prominent */
+}
+
+/* To make the text inside the card larger */
+.result-card h2 {
+  font-size: 35px; /* For "You scored" text */
+  margin-bottom: 10px;
+}
+
+.result-card p {
+  font-size: 20px; /* For the message below the score */
+  color: var(--muted-text);
+  margin-top: 0;
+}
+
+.result-card .score {
+  font-size: 50px; /* For the actual score, e.g., "2/5 (40%)" */
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.result-actions {
+  display: flex;
+  gap: 12px; /* Increased gap between buttons */
+  margin-top: 30px; /* Increased margin to separate from text */
+  justify-content: center;
+}
+
+/* answers list */
+.answer-card {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 700px;
+}
+
+.answer-card h4 {
+  margin: 0 0 8px 0;
+}
+
+.ok {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.no {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 18px;
+  text-align: center;
+  color: var(--muted);
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.75));
+}
+
+/* small screens */
+@media (max-width: 640px) {
+  .video-wrap iframe {
+    height: 220px;
+  }
+  .topic-card {
+    min-height: 120px;
+  }
+}

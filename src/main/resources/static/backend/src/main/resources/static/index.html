@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Attendance Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-bar"></i> Students Attendance Tracker</h1>
+        </header>
+        <nav>
+            <button id="addStudentBtn" class="active"><i class="fas fa-user-plus"></i> Add Student</button>
+            <button id="markDailyAttendanceBtn"><i class="fas fa-calendar-day"></i> Mark Overall Attendance</button>
+            <button id="leaveManagementBtn"><i class="fas fa-calendar-alt"></i> Leave Management</button>
+            <button id="periodWiseAttendanceBtn"><i class="fas fa-clipboard-list"></i> Period-wise Attendance</button>
+            <button id="viewReportsBtn"><i class="fas fa-chart-pie"></i> View Reports</button>
+        </nav>
+
+        <main>
+            <section id="addStudentSection" class="section">
+                <h2><i class="fas fa-user-plus"></i> Add/Edit Student</h2>
+                <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" placeholder="Enter student name">
+                </div>
+                <div class="form-group">
+                    <label for="studentRollNo">Roll Number:</label>
+                    <input type="text" id="studentRollNo" placeholder="Enter roll number (e.g., 101, CS001)">
+                    <input type="hidden" id="originalRollNo">
+                </div>
+                <div class="form-group">
+                    <label for="studentDepartment">Department:</label>
+                    <select id="studentDepartment">
+                        <option value="">Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="studentAcademicYear">Academic Year:</label>
+                    <select id="studentAcademicYear">
+                        <option value="">Select Academic Year</option>
+                        <option value="1st year">1st Year</option>
+                        <option value="2nd year">2nd Year</option>
+                        <option value="3rd year">3rd Year</option>
+                        <option value="4th year">4th Year</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button id="saveStudentBtn" class="btn btn-primary"><i class="fas fa-save"></i> Add Student</button>
+                    <button id="cancelEditBtn" class="btn btn-secondary hidden"><i class="fas fa-times-circle"></i> Cancel Edit</button>
+                </div>
+
+                <h3><i class="fas fa-users"></i> Registered Students List</h3>
+                <div class="button-group">
+                    <button id="clearAllStudentsBtn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Clear All Students</button>
+                </div>
+                <div class="logbook-table-container">
+                    <table class="logbook-table">
+                        <thead>
+                            <tr>
+                                <th>Roll No</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Academic Year</th> <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="registeredStudentsTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="markDailyAttendanceSection" class="section hidden">
+                <h2><i class="fas fa-calendar-day"></i> Mark Overall Attendance</h2>
+                <div class="form-group">
+                    <label for="dailyAttendanceDate">Date:</label>
+                    <input type="date" id="dailyAttendanceDate">
+                </div>
+                <div class="form-group">
+                    <label for="dailyAttendanceDepartment">Department:</label>
+                    <select id="dailyAttendanceDepartment">
+                        <option value="">Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dailyAttendanceAcademicYear">Academic Year:</label>
+                    <select id="dailyAttendanceAcademicYear">
+                        <option value="">Select Academic Year</option>
+                        <option value="1st year">1st Year</option>
+                        <option value="2nd year">2nd Year</option>
+                        <option value="3rd year">3rd Year</option>
+                        <option value="4th year">4th Year</option>
+                    </select>
+                </div>
+                <button id="loadDailyStudentsBtn" class="btn btn-secondary"><i class="fas fa-users"></i> Load Students</button>
+
+                <div class="attendance-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Roll No</th>
+                                <th>Name</th>
+                                <th>Present</th>
+                                <th>Absent</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dailyAttendanceTableBody">
+                        </tbody>
+                    </table>
+                    <button id="submitDailyAttendanceBtn" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit Overall Attendance</button>
+                    <div id="dailyAttendanceSummary" class="attendance-summary hidden"></div>
+                </div>
+
+                <h3><i class="fas fa-book"></i> Overall Students Attendance List</h3>
+                <div class="logbook-table-container">
+                    <table class="logbook-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Roll No</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Academic Year</th> <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dailyLogbookTableBody">
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <section id="periodWiseAttendanceSection" class="section hidden">
+                <h2><i class="fas fa-clipboard-list"></i> Mark Period-wise Attendance</h2>
+                <div class="form-group">
+                    <label for="periodAttendanceDate">Date:</label>
+                    <input type="date" id="periodAttendanceDate">
+                </div>
+                <div class="form-group">
+                    <label for="periodAttendanceDepartment">Department:</label>
+                    <select id="periodAttendanceDepartment">
+                        <option value="">Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="periodAttendanceAcademicYear">Academic Year:</label>
+                    <select id="periodAttendanceAcademicYear">
+                        <option value="">Select Academic Year</option>
+                        <option value="1st year">1st Year</option>
+                        <option value="2nd year">2nd Year</option>
+                        <option value="3rd year">3rd Year</option>
+                        <option value="4th year">4th Year</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="periodType">Attendance Type:</label>
+                    <select id="periodType">
+                        <option value="">Select Type</option>
+                        <option value="subject">Subject</option>
+                        <option value="lab">Lab</option>
+                    </select>
+                </div>
+                <div class="form-group" id="periodSubjectDropdownGroup" style="display: none;">
+                    <label for="periodSubject">Subject:</label>
+                    <select id="periodSubject">
+                        <option value="">Select Subject</option>
+                        </select>
+                </div>
+                <div class="form-group" id="periodLabDropdownGroup" style="display: none;">
+                    <label for="periodLab">Lab:</label>
+                    <select id="periodLab">
+                        <option value="">Select Lab</option>
+                        </select>
+                </div>
+                <button id="loadPeriodStudentsBtn" class="btn btn-secondary"><i class="fas fa-users"></i> Load Students</button>
+
+                <div class="attendance-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Roll No</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="periodAttendanceTableBody">
+                        </tbody>
+                    </table>
+                    <button id="submitPeriodAttendanceBtn" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit Attendance</button>
+                    <div id="periodAttendanceSummary" class="attendance-summary hidden"></div>
+                </div>
+
+                <h3><i class="fas fa-book"></i> Period-wise  Students Attendance List</h3>
+                <div class="logbook-table-container">
+                    <table class="logbook-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Roll No</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Academic Year</th> <th>Type</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="periodLogbookTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="leaveManagementSection" class="section hidden">
+                <h2><i class="fas fa-calendar-alt"></i> Student Leave Management</h2>
+                <div class="form-group">
+                    <label for="leaveRollNo">Student Roll Number:</label>
+                    <input type="text" id="leaveRollNo" placeholder="Enter roll number">
+                </div>
+                <div class="form-group">
+                    <label for="leaveStartDate">Start Date:</label>
+                    <input type="date" id="leaveStartDate">
+                </div>
+                <div class="form-group">
+                    <label for="leaveEndDate">End Date:</label>
+                    <input type="date" id="leaveEndDate">
+                </div>
+                <div class="form-group">
+                    <label for="leaveReason">Reason for leave:</label>
+                    <textarea id="leaveReason" rows="4"></textarea>
+                </div>
+                <button id="applyLeaveBtn" class="btn btn-primary"><i class="fas fa-check-circle"></i> Apply Leave</button>
+
+                <h3><i class="fas fa-book-open"></i> All Applied Leaves</h3>
+                <div class="logbook-table-container">
+                    <table class="logbook-table">
+                        <thead>
+                            <tr>
+                                <th>Roll No</th>
+                                <th>Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaveLogbookTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="viewReportsSection" class="section hidden">
+                <h2><i class="fas fa-chart-pie"></i> View Attendance Reports</h2>
+                <div class="form-group">
+                    <label for="reportDepartment">Department Filter:</label>
+                    <select id="reportDepartment">
+                        <option value="">All Departments</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reportAcademicYear">Academic Year Filter:</label> <select id="reportAcademicYear"> <option value="">All Academic Years</option> <option value="1st year">1st Year</option>
+                        <option value="2nd year">2nd Year</option>
+                        <option value="3rd year">3rd Year</option>
+                        <option value="4th year">4th Year</option>
+                    </select>
+                </div>
+                <button id="generateReportBtn" class="btn btn-secondary"><i class="fas fa-chart-line"></i> Generate Reports</button>
+
+                <div class="report-charts">
+                    <div class="chart-wrapper">
+                        <h3>Overall College Attendance</h3>
+                        <div class="chart-container">
+                            <canvas id="collegeChart"></canvas>
+                            <div class="chart-overlay" id="overallChartOverlay">Click a slice for details</div>
+                        </div>
+                        <div class="chart-summary-text" id="overallSummary"></div>
+                    </div>
+                    <div class="chart-wrapper">
+                        <h3>Department Wise Attendance</h3>
+                        <div class="chart-container">
+                            <canvas id="departmentChart"></canvas>
+                            <div class="chart-overlay" id="departmentChartOverlay">Click a slice for details</div>
+                        </div>
+                        <div class="chart-summary-text" id="departmentSummary"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Online Quiz System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <!-- LOGIN -->
+    <section id="view-login" class="view active">
+      <div class="card center-card">
+        <h1 class="brand">SkillBoost • Quiz</h1>
+        <form id="loginForm" class="form">
+          <input id="username" placeholder="Username" required />
+          <input id="password" type="password" placeholder="Password" required />
+          <button class="btn primary" type="submit">Login</button>
+        </form>
+        <p class="muted">No real auth — enter any username/password to continue.</p>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="view-dashboard" class="view">
+      <header class="topbar">
+        <div class="brand-mini">SkillBoost</div>
+        <div class="user-area">
+          <span id="welcomeUser">Hello</span>
+          <button id="logoutBtn" class="btn ghost">Logout</button>
+        </div>
+      </header>
+
+      <div class="container">
+        <h2>Choose a Topic</h2>
+        <div class="grid topics-grid">
+          <div class="topic-card" data-topic="quantitative">
+            <div class="icon">Σ</div>
+            <h3>Quantitative Aptitude</h3>
+            <p>Numbers & reasoning — videos per subtopic</p>
+          </div>
+
+          <div class="topic-card" data-topic="logical">
+            <div class="icon">⚙</div>
+            <h3>Logical Reasoning</h3>
+            <p>Puzzles & thinking — videos per subtopic</p>
+          </div>
+
+          <div class="topic-card" data-topic="verbal">
+            <div class="icon">✍</div>
+            <h3>Verbal Ability</h3>
+            <p>Language skills — one common video hub</p>
+          </div>
+
+          <div class="topic-card" data-topic="communication">
+            <div class="icon">🗣</div>
+            <h3>Communication Skills</h3>
+            <p>HR & soft skills — one common video hub</p>
+          </div>
+
+          <div class="topic-card" data-topic="gk">
+            <div class="icon">🌍</div>
+            <h3>General Knowledge</h3>
+            <p>No video — direct quizzes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBTOPICS (used for video-per-subtopic & no-video topics) -->
+    <section id="view-subtopics" class="view">
+      <header class="topbar">
+        <button id="backToDashboard" class="btn ghost">← Back</button>
+        <h2 id="subtopicsTitle">Subtopics</h2>
+        <div></div>
+      </header>
+
+      <div class="container">
+        <div id="subtopicsList" class="list"></div>
+      </div>
+    </section>
+
+    <!-- VIDEO (for per-subtopic video view) -->
+    <section id="view-video" class="view">
+      <header class="topbar">
+        <button id="backToSubtopics" class="btn ghost">← Back</button>
+        <h2 id="videoTitle">Video</h2>
+        <div></div>
+      </header>
+
+      <div class="container">
+        <div class="video-wrap">
+          <iframe id="ytPlayer" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="controls">
+          <button id="takeTestBtn" class="btn primary">Watch & Test →</button>
+          <button id="backToDashboard2" class="btn ghost">Back to Topics</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOPIC HUB (single-video topics: verbal, communication) -->
+    <section id="view-topic-hub" class="view">
+      <header class="topbar">
+        <button id="backToDashboardHub" class="btn ghost">← Back</button>
+        <h2 id="topicHubTitle">Topic Hub</h2>
+        <div></div>
+      </header>
+
+      <div class="container">
+        <div class="video-wrap small">
+          <iframe id="hubPlayer" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h3 class="mt">Subtopics</h3>
+        <div id="hubSubtopicsList" class="list"></div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="view-quiz" class="view">
+      <header class="topbar">
+        <button class="btn ghost" id="quitQuizBtn">Quit</button>
+        <div>
+          <h3 id="quizTitle">Quiz</h3>
+        </div>
+        <div class="timer" title="Time left"><span id="timer">20</span>s</div>
+      </header>
+
+      <div class="container narrow">
+        <div class="card question-card">
+          <div class="qmeta">
+            <small>Question <span id="qIndex">1</span> / <span id="qTotal">5</span></small>
+          </div>
+
+          <h3 id="questionText">Question text</h3>
+          <div id="optionsBox" class="options-grid"></div>
+
+          <div class="nav">
+            <button id="prevBtn" class="btn ghost">← Prev</button>
+            <button id="nextBtn" class="btn" style="display:inline-block">Next →</button>
+            <button id="submitBtn" class="btn primary" style="display:none">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="view-result" class="view">
+      <header class="topbar">
+        <div></div>
+        <h2>Result</h2>
+        <div></div>
+      </header>
+
+      <div class="container narrow center">
+        <div class="card result-card">
+          <h2 id="scoreLine">You scored 0/5</h2>
+          <p id="messageLine">Message</p>
+
+          <div class="result-actions">
+            <button id="tryAgainBtn" class="btn">Try Again</button>
+            <button id="viewAnswersBtn" class="btn primary">View Answers</button>
+            <button id="backHomeBtn" class="btn ghost">Back Home</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANSWERS -->
+    <section id="view-answers" class="view">
+      <header class="topbar">
+        <button id="backFromAnswers" class="btn ghost">← Back</button>
+        <h2>Answers</h2>
+        <div></div>
+      </header>
+
+      <div class="container narrow">
+        <div id="answersList" class="answers-list"></div>
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      Built with ♥ for practice — <span id="appVersion">v1.0</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
